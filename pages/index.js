@@ -50,7 +50,7 @@ const App = () => {
       <HeadComponent/>
       <div className="container">
         <header className="header-container">
-          <p className="header"> 😳 Buildspace Solana Pay Store 😈</p>
+          <p className="header"> 😳 Solana Pay Store 😈</p>
           <p className="sub-text">The only store that accepts shitcoins</p>
 
           {isOwner && (
@@ -64,16 +64,6 @@ const App = () => {
           {creating && <CreateProduct />}
           {publicKey ? renderItemBuyContainer() : renderNotConnectedContainer()}
         </main>
-
-        <div className="footer-container">
-          <img alt="Twitter Logo" className="twitter-logo" src="twitter-logo.svg" />
-          <a
-            className="footer-text"
-            href={TWITTER_LINK}
-            target="_blank"
-            rel="noreferrer"
-          >{`built with @${TWITTER_HANDLE}`}</a>
-        </div>
       </div>
     </div>
   );
